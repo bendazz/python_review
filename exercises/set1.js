@@ -99,7 +99,7 @@ export const set1 = {
       prompt: 'What does this code print?',
       code: 'total = 0\nfor n in [1, 2, 3, 4]:\n    total += n\nprint(total)',
       answer: '<code>10</code>',
-      explanation: 'The loop adds each number to <code>total</code>: <code>1 + 2 + 3 + 4 = 10</code>.'
+      explanation: 'The loop adds each number to <code>total</code>: <code>1 + 2 + 3 + 4 = 10</code>. Note that <code>total += n</code> is shorthand for <code>total = total + n</code> — they do the same thing.'
     },
     {
       topic: 'Functions',
@@ -111,9 +111,9 @@ export const set1 = {
     {
       topic: 'Functions',
       prompt: 'What does this code print?',
-      code: 'def greet(name):\n    print("Hello, " + name + "!")\n\ngreet("World")',
+      code: 'def greet(name):\n    print(f"Hello, {name}!")\n\ngreet("World")',
       answer: '<code>Hello, World!</code>',
-      explanation: 'The parameter <code>name</code> receives <code>"World"</code>, then the function prints the combined string.'
+      explanation: 'The parameter <code>name</code> receives <code>"World"</code>. Inside the f-string, <code>{name}</code> is replaced with that value to produce <code>Hello, World!</code>.'
     },
     {
       topic: 'Functions',
